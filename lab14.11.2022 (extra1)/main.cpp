@@ -8,7 +8,7 @@ class Volume
     float a;
     float r;
     float h;
-    public:
+public:
     Volume(){}
     Volume(float aa)
     {
@@ -36,14 +36,14 @@ class Volume
 void cube(Volume ob)
 {
     float result = ob.get_a() * ob.get_a() * ob.get_a();
-     cout<<"The Volume of cube is: "<<result <<endl;
+    cout<<"The Volume of cube is: "<<result <<endl;
 }
 
 
 void cylinder(Volume ob)
 {
     float result = PI * ob.get_r() * ob.get_r() * ob.get_h();
-     cout<<"The Volume of cylinder is: "<<result <<endl;
+    cout<<"The Volume of cylinder is: "<<result <<endl;
 }
 
 int main()
