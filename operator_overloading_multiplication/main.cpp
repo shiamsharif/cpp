@@ -1,15 +1,8 @@
-//operator overloding.
+//operator overloding->(*)
    
 #include <iostream>
 using namespace std;
 
-/*
-7+5i
-2+3i
-3+3i
------
-12+11i (will be the output.)
-*/
 
 class Shiam
 {
@@ -20,15 +13,15 @@ public:
         real = a;
         img = b;
     }
-    Shiam operator+(Shiam obj)
+    Shiam operator*(Shiam obj)
     {
         Shiam temp;
        // cout << "Temp Real: "<< temp.real <<" img : "<<temp.img <<"i" <<endl;
        // cout << "ob1 Real : "<< real      <<" Img : "<<img      <<"i" <<endl;
        // cout << "ob2 Real : "<<obj.real   <<" Img : "<<obj.img  <<"i" <<endl;
 
-        temp.real = real + obj.real;
-        temp.img  = img  + obj.img;
+        temp.real = real * obj.real;
+        temp.img  = img  * obj.img;
 
        // cout<<"\nComplex Number : "<<temp.real <<"+" <<temp.img <<"i" <<endl;
         
@@ -54,11 +47,11 @@ int main()
 
     Shiam ob4;
 
-    ob4 = ob1+ob2+ob3;
+    ob4 = ob1*ob2*ob3;
     //ob1.operator+(ob2);
 
     //ob1.operator+(ob1);
-    cout<<"\nComplex Number -> "<<ob4.getReal() <<" + " << ob4.getimg()<<"i" <<endl;
+    cout<<"\nComplex Number -> "<<ob4.getReal() <<"  " << ob4.getimg()<<endl;
         
 
     return 0;
