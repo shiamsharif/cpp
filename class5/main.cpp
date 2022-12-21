@@ -40,7 +40,7 @@ class student : public person
     void display2()
     {
         cout<<"Student class :"<<endl;
-        display1();
+        display();
         cout<<"ID   : "<<id <<endl;
     }
 }; 
@@ -50,8 +50,7 @@ int main()
     person pob1;
     pob1.name ="Shiam sharif";
     pob1.age =21;
-
-    pob1.display1();
+    pob1.display();
 
     cout<<endl;
 
@@ -59,7 +58,6 @@ int main()
     sob1.name ="Shiam Sharif";
     sob1.age =24;
     sob1.id =106;
-
     sob1.display2();
 
     return 0;

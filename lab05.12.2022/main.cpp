@@ -28,4 +28,6 @@ int main()
     obj.engine ="BMW X7❤‍🔥";
     obj.wheel = 4;
     obj.display2();
+
+    return 0;
 }

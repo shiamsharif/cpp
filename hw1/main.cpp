@@ -1,3 +1,10 @@
+/*
+1. Create a class named Animal which has two public member variables color(string) and type(
+string). Create another class named cat which has a private member variable no_of_legs and
+cat class inherits Animal class. In the main function create an object of cat class and show
+those values using member function. (Single level inheritance)
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -32,8 +39,13 @@ class Cat : public Animal
 
 int main()
 {
-    Cat obj;
+    Cat obj(10);
     obj.color = "Black";
     obj.type = "Wild";
-    obj.on
+    obj.display();
+    cout<<endl;
+    obj.show();
+
+    return 0;
+
 }

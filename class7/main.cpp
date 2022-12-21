@@ -46,6 +46,7 @@ int main()
     Child pob1;
     pob1.name ="Shiam sharif";
     pob1.age =21;
+    pob1.id =32;
     pob1.display();
 
     cout<<endl;
