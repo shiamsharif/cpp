@@ -6,10 +6,8 @@ int main()
     //*number of row n (user i/p) .
     int n,m; 
     cout<<"Number of row : ";
-    cin >>n;
-    // //*number of colum m (user i/p) .
-    // cout<<"Number of Colum : ";
-    // cin >>m;
+    cin >>n; // take input as number of line.
+    
     for(int i = 1; i<=n; i++)
     {
         if(i%2==1) //if line number is odd
@@ -24,4 +22,5 @@ int main()
            cout<<((3*i)-0) <<"\t"<<((3*i)-1) <<"\t" <<((3*i)-2)<<endl;
         }
     }
+    return 0;
 }
